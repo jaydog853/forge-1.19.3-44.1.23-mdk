@@ -1,0 +1,8 @@
+{
+  "conditions": [
+    {
+      "condition": "minecraft:survives_explosion"
+    }
+  ],
+  "type": "brokenmod:brokenmod_drops"
+}
