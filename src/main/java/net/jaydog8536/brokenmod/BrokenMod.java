@@ -3,6 +3,7 @@ package net.jaydog8536.brokenmod;
 import com.mojang.logging.LogUtils;
 import net.jaydog8536.brokenmod.block.ModBlocks;
 import net.jaydog8536.brokenmod.item.ModItems;
+import net.jaydog8536.brokenmod.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,6 +37,8 @@ public class BrokenMod
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
+
+        ModLootModifiers.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
