@@ -1,6 +1,6 @@
 {
-  "replace": true,
+  "replace": false,
   "entries":[
-    "brokenmod:wood_chips_from_wood"
+    "brokenmod:brokenmod_drops"
   ]
 }
