@@ -57,10 +57,10 @@ public class AddItemModifier {
                         block == Blocks.STRIPPED_BIRCH_LOG) {
                     Random rand = new Random();
                     int chance = rand.nextInt(100);
-                    // 1/5 chance
-                    if(chance <= 20) {
+                    // 3/4 chance
+                    if(chance <= 75) {
                         generatedLoot.clear();
-                        generatedLoot.add(new ItemStack(ModItems.WOOD_CHIP.get(), 1));
+                        generatedLoot.add(new ItemStack(ModItems.WOOD_CHIP.get(), 2));
                     }
                 }
             }
